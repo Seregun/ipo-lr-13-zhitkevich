@@ -1,7 +1,7 @@
 from ForImages.image_handler import ImageHandler
 
 def main():
-    image_path = input("Enter the path to the image (e.g., images/image.jpg): ")
+    image_path = input("Введите путь к изображению (Images\\image.jpg): ")
     try:
         handler = ImageHandler(image_path)
 
@@ -14,9 +14,9 @@ def main():
 
         processor.image.show()
         processor.image.save("processed_image.png")
-        print("Processed image saved as 'processed_image.png'.")
+        print("Обработанное изображение, сохраненное как 'processed_image.png'.")
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"Произошла ошибка: {e}")
 
 if __name__ == "__main__":
     main()
